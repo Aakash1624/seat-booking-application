@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="./images/wp8931478.jpg"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <title>Seat Booking Application</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="main-title">Book Your Movie Tickets</h1>
+      <div class="container-info">
+        <label for="tilte">Pick a Movie :</label>
+        <select name="select" class="movie-price" id="movie-price">
+          <option value="0" disabled>Select a Movie</option>
+          <option value="150" selected>Movie One - $150</option>
+          <option value="190">Movie Two - $190</option>
+          <option value="210">Movie Three - $210</option>
+          <option value="120">Movie Four - $120</option>
+        </select>
+      </div>
+
+      <div class="legend-container">
+        <nav class="nav-container">
+          <div class="nav-info">
+            <div class="seats"></div>
+            <span class="legend-text">N/A</span>
+          </div>
+
+          <div class="nav-info">
+            <div class="seats selected"></div>
+            <span class="legend-text">Selected</span>
+          </div>
+
+          <div class="nav-info">
+            <div class="seats occupied"></div>
+            <span class="legend-text">Occupied</span>
+          </div>
+        </nav>
+      </div>
+
+      <div class="screen-container"></div>
+
+      <div class="seats-container">
+        <div class="seat-column-one">
+          <div class="column-part-one">
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats occupied"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats occupied"></div>
+          </div>
+
+          <div class="column-part-two">
+            <div class="seats"></div>
+            <div class="seats occupied"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats occupied"></div>
+            <div class="seats"></div>
+            <div class="seats occupied"></div>
+            <div class="seats"></div>
+          </div>
+        </div>
+
+        <div class="seat-column-two">
+          <div class="column-part-three">
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats occupied"></div>
+            <div class="seats"></div>
+          </div>
+
+          <div class="column-part-four">
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats"></div>
+          </div>
+
+          <div class="column-part-five">
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats"></div>
+          </div>
+        </div>
+
+        <div class="seat-column-three">
+          <div class="column-part-six">
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats"></div>
+          </div>
+
+          <div class="column-part-seven">
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-content">
+        <div class="count">
+          You have selected
+          <span class="seat-count" id="seat-count">0</span> seats for the total
+          price of
+          <span class="total-price" id="total-price">$0</span>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
